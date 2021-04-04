@@ -1,0 +1,30 @@
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/nav.ejs') %>
+
+
+<div class="blogs container mt-5">
+
+    <form action="/blogs" method="POST">
+
+        <div class="form-group">
+            <label for="title">Blog Title</label>
+            <input required type="text" class="form-control" id="title" name="title">
+        </div>
+
+        <div class="form-group">
+            <label for="snippet">Blog Snippet</label>
+            <input required type="text" class="form-control" id="snippet" name="snippet">
+        </div>
+
+        <div class="form-group">
+            <label for="body">Blog Body</label>
+            <textarea class="form-control" id="body" name="body"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+
+</div>
+
+<%- include('../partials/footer.ejs') %>

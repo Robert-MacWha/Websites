@@ -1,0 +1,8 @@
+Refactor tf-model class to be more modular
+Move pixel generation code to a web worker (https://p5js.org/reference/#/p5/createImage)
+Add in more user interactivity (Change activation function, start/stop training, ect)
+Halt training process when there are model errors (invalid nodes, outputs not hooked up to valid nodes, ect)
+
+Implement ability to view output from any node
+
+Create links from each option to a explination page (IE, click obn the optimizer word and it brings you to a page explaining the different optimizers)

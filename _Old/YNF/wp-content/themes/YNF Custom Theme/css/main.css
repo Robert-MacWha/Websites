@@ -1,0 +1,55 @@
+:root {
+    --navbar-size: 60px;
+    --heading-size: min(30vw, 250px);
+
+
+    --font-light-1: #ffffff;
+    --font-light-2: #eeeeee;
+    --font-light-3: #cccccc;
+    --font-dark-1: #111111;
+    --font-dark-2: #222222;
+    --font-dark-3: #777777;
+
+    --font-1: 0.8em;
+    --font-2: 1.5em;
+    --font-3: 2.5em;
+    --font-4: 4em;
+    --font-5: 6em;
+
+    --font-spacing: 0.05em;
+    --font-line-height: 1.5;
+
+    --highlight-1: #e06a26;
+
+    --transition: 0.3s;
+
+    /* Fonts
+        Primary: Helvetica
+        Print: Georgia
+        Bold: Verdana
+    */
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+body .container {
+    letter-spacing: var(--font-spacing);
+    line-height: var(--font-line-height);
+}
+
+body .text_heading {
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }

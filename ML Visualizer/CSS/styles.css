@@ -1,0 +1,182 @@
+/* 
+Colors:
+ - #272838 (dark blue)    -> Backgrounds / text
+ - #0081AF (light blue)   -> Headings / highlights
+ - #7CAA4B (light green)  -> Call to action
+ - #F9F8F8 (pale white)   -> Backgrounds / text
+ - #FFFFFF (white)        -> Backgrounds
+
+Font sizes: 
+ - Title: 3rem
+ - Subtitle: 1.5rem
+ - Text: 1rem
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 12;
+    letter-spacing: 0.6px;
+    line-height: 1.6;
+
+    font-family: Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    position: relative;
+
+    background: #272838;
+    color: #FFFFFF;
+    box-shadow: 5px 0px 6px #aaaaaa;
+
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 25px;
+
+    z-index: 2;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 3rem;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+header ul {
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: auto;
+    padding: 0;
+}
+
+header li {
+    display: inline-block;
+    list-style: none;
+
+    padding: 0 5px;
+}
+
+header a {
+    color: #F9F8F8;
+    text-decoration: none;
+    padding: 3px 6px;
+}
+
+header a:hover {
+    color: #F9F8F8;
+    text-decoration: none;
+}
+
+/* Menu */
+.hyperparams {
+    position: relative;
+
+    background: #ffffff;
+    color: #272838;
+    box-shadow: 5px 0px 6px #aaaaaa;
+
+    padding: 20px;
+
+    z-index: 1;
+}
+
+.hyperparams p {
+    margin: auto;
+    margin-bottom: 10px;
+
+    color: #000000;
+}
+
+.hyperparams h3 {
+    font-size: 1.5rem;
+    color: #272838;
+}
+
+.hyperparams .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+/* Control buttons */
+.hyperparams .button {
+    cursor: pointer;
+}
+
+.hyperparams .replay, .hyperparams .next {
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.hyperparams .replay {
+    right: 0;
+}
+
+.hyperparams .next  {
+    left: 0;
+}
+
+.hyperparams .play, .hyperparams .pause {
+    display: block;
+
+    width: 80%;
+    height: auto;
+
+    margin: auto;
+}
+
+/* Graphic */
+.graphic {
+    position: relative;
+
+    background: #F9F8F8;
+    padding: 50px 0;
+}
+
+.graphic canvas {
+    border: #e1e1e1 1px solid;
+}
+
+/* Hover.CSS */
+/* Underline From Center */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #2098D1;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }

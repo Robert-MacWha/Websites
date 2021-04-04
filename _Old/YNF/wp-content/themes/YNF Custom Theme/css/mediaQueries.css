@@ -1,0 +1,163 @@
+/* Header */
+@media only screen and (max-width: 991px) {
+    /* Change padding for header dropdown to exist */
+    nav .navbar-collapse {
+        margin-top: -4px;
+        background-color: var(--font-dark-2);
+    }
+}
+
+/* Front page */
+@media only screen and (max-width: 1335px) {
+    /* Shrink gap between navbar items */
+    nav .menu-top-menu-container li {
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 1275px) {
+    /* Shrink gap between navbar items */
+    nav .menu-top-menu-container li {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 215px) {
+    /* Shrink gap between navbar items */
+    nav .menu-top-menu-container li {
+        padding: 0 5px;
+        font-size: var(--font-1);
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    /* Remove author name from articles (formatting issue) */
+    .front-page .articles .tertiary p {
+        display: none;
+    }
+
+    /* Shring padding between nav bar items */
+    header li {
+        padding: 5px 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Remove all special formating on primary, secondary, and tertiary articles (shift in allignment to single column) */
+
+    .front-page .articles .primary {
+        margin-bottom: 20px;
+    }
+
+    .front-page .articles .secondary a {
+        text-align: center;
+    }
+    
+    .front-page .articles .secondary .wrapper {
+        margin-bottom: 50px
+    }
+    
+    .front-page .articles .secondary h5 {
+        font-size: var(--font-3);
+        margin-top: 20px;
+    }
+    
+    .front-page .articles .primary {
+        padding-right: 15px;
+        border: none;
+    }
+
+    .front-page .articles .primary.b {
+        padding-left: 15px;
+        border: none;
+    }
+    
+    .front-page .articles .secondary {
+        padding-left: 15px;
+    }
+
+    .front-page .articles .tertiary {
+        display: none;
+    }
+}
+
+/* Featured articles, adjusting font size */
+@media only screen and (max-width: 1480px) {
+    .front-page .showcase .preview h3 {
+        font-size: var(--font-1);
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .front-page .showcase .preview h3 {
+        font-size: var(--font-1);
+    }
+
+    /* Adjusting title font size (spacing) */
+    .front-page .showcase .title {
+        font-size: var(--font-4);
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    /* Remove article names */
+    .front-page .showcase .preview h3 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    /* Remove article names */
+    .front-page .articles .tertiary {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .front-page .showcase .page-info {
+        top: 150px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Remove featured articles list */
+    .front-page .showcase button {
+        display: none;
+    }
+
+    .front-page .showcase .featured {
+        display: none;
+    }
+
+    /* Adjusting title font size (spacing) */
+    .front-page .showcase .title {
+        font-size: var(--font-3);
+        top: 100px;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    /* Remove featured articles list */
+    .front-page .showcase button {
+        display: none;
+    }
+
+    .front-page .showcase .featured {
+        display: none;
+    }
+}
+
+/* Archive Page -------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 980px) {
+    .archive .container .card-body img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .heading .title {
+        font-size: var(--font-3);
+    }
+}

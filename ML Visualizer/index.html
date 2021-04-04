@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="CSS/styles.css"></link>
+
+</head>
+<body>
+    
+    <header>
+
+        <h1>Website</h1>
+
+        <nav>
+
+            <ul>
+
+                <li><a class="hvr-underline-from-center" href="">Editor</a></li>
+                <li><a class="hvr-underline-from-center" href="">Information</a></li>
+                <li><a class="hvr-underline-from-center" href="">Link #3</a></li>
+
+                <hr /> <!--Underline for the header-->
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section class="hyperparams">
+
+        <div class="container-fluid options">
+            
+            <div class="grid">
+
+                <div class="column">
+                    <div class="row">
+
+                        <div class="col-lg-2">
+                            <img src="Images/replay.svg" class="button replay">
+                        </div>
+
+                        <div class="col-lg-7">
+                            <img src="Images/play.svg" class="button play">
+                        </div>
+
+                        <div class="col-lg-2">
+                            <img src="Images/next.svg" class="button next">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <p>Epoch</p>
+                    <h3>000,000</h3>
+
+                </div>
+
+                <div class="column">
+
+                    <p>Learning&nbspRate</p>
+
+                    <select name="learning_rates" id="learning_rates">
+                        <option value="0.001">0.001</option>
+                        <option value="0.005">0.005</option>
+                        <option value="0.01">0.01</option>
+                        <option value="0.05">0.05</option>
+                        <option value="0.1">0.1</option>
+                        <option value="0.5">0.5</option>
+                        <option value="1">1</option>
+                        <option value="5">5</option>
+                    </select>
+
+                </div>
+
+                <div class="column">
+
+                    <p>Activations</p>
+
+                    <select name="activations" id="activations">
+                        <option value="linear">Linear</option>
+                        <option value="reLU">ReLU</option>
+                        <option value="sin">Sin</option>
+                        <option value="sigmoid">Sigmoid</option>
+                        <option value="tanh">Tanh</option>
+                    </select>
+
+                </div>
+
+                <div class="column">
+
+                    <p>Optimizers</p>
+
+                    <select name="optimizers" id="optimizers">
+                        <option value="SGD">SGD</option>
+                        <option value="Momentum">Momentum</option>
+                        <option value="Adam">Adam</option>
+                        <option value="RMSProp">RMSProp</option>
+                    </select>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="graphic">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div id="editor-container" class="col-sm-6 editor-container">
+
+                </div>
+                <div id="graph-container" class="col-sm-6">
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+
+    <script src="JS/datasets.js"></script>
+
+    <script src="JS/node.js"></script>
+    <script src="JS/connection.js"></script>
+    <script src="JS/tf-model.js"></script>
+    
+    <script src="JS/editor_p5.js"></script>
+    <script src="JS/graph_p5.js"></script>
+    <script src="JS/sketch.js"></script>
+
+    <!--
+    <script src="JS/node.js"></script>
+    <script src="JS/connection.js"></script>
+    <script src="JS/graphEditor.js"></script>
+    <script src="JS/graph.js"></script>
+    <script src="JS/tf-model.js"></script>
+    <script src="JS/sketch.js"></script>
+    -->
+
+</body>
+</html>
